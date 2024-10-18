@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 :root {
-  --primary-color: #22254b;
+  --primary-color: #40469e;
   --secondary-color: #373b69;
 }
 
@@ -62,7 +62,7 @@ main {
 }
 
 .movie-info {
-  color: #eee;
+  color: #443a3a;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,7 +95,7 @@ main {
 }
 
 .overview {
-  background-color: #fff;
+  background-color: #e2cfcf;
   padding: 2rem;
   position: absolute;
   left: 0;
