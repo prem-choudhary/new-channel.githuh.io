@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <h1 id="id">HELLO AND Welcome TO THIS THIS</h1>
+    <h1 id="heading">HELLO AND Welcome TO THIS THIS</h1>
+    <input type="button" value="Hide" id="Hidebtn" />
+    <input type="button" value="Show" id="Showbtn" />
+    <input type="button" value="Hide and Show" id="HideShowbtn" />
+    <script>
+      $(document).ready (function(){
+          $('#Hidebtn').click (function(){
+              $('h1').hide()
+          })
+          $('#Showbtn').click (function(){
+              $('h1').show()
+          })
+          $('#HideShowbtn').click (function(){
+              $('h1').toggle()
+          })
+          $('#Showbtn').click (function(){
+              $('#heading').css('color' , 'red')
+              $('#id').css('color' , 'green')
+          })
+      })
+    </script>
+  </body>
+</html>
