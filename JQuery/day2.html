@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+
+    <!-- <h1>Heading one</h1>
+    <h2>Heading two</h2>
+    <h3>Heading three</h3>
+    <h4>Heading four</h4>
+    <h5>Heading five</h5>
+    <h6>Heading six</h6>
+    <input type="button" value="click" id="btn" />
+    <script>
+      $(document).ready(function(){
+          $('#btn').click(function(){
+              $('').css('color', 'red')
+          })
+      })
+    </script> -->
+
+    <ul>
+      <li>India</li>
+      <li>Nepal</li>
+      <li>Bhutan</li>
+      <li>Pakistan</li>
+      <li>Bangladesh</li>
+    </ul>
+    <input type="button" value="click" id="btn" />
+    <script>
+      $(document).ready(function(){
+          $('#btn').click(function(){
+              $('ul li').css('background-color' , 'green')
+          })
+      })
+    </script>
+
+    <ul id="List">
+      <li>India</li>
+      <li>Nepal</li>
+      <li>Bhutan</li>
+      <li>Pakistan</li>
+      <li>Bangladesh</li>
+    </ul>
+    <input type="button" value="click" id="btn1" />
+
+    <script>
+      $(document).ready(function(){
+          $('#btn1').click(function(){
+              $('#List').css('color' , 'red')
+          })
+      })
+    </script>
+
+    <h1 class="c1">Mirzapur</h1>
+    <h1 class="c2">patal look</h1>
+    <h1 class="c3">doctor</h1>
+    <input type="button" value="click" id="btns" />
+    <script>
+      $(document).ready(function(){
+          $("#btns").click(function(){
+              $('.c1 , .c2').css('font-size' , '45px')
+          })
+      })
+    </script>
+  </body>
+</html>

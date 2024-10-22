@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body class="p-4">
+    <h1 class="text-success">learn Bootstrap with Prem Chaudhary</h1>
+
+    <p>How to Customize Bootstrap jQuery Plugins ?</p>
+    <ul id="myTab" class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#tab1">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#tab2">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#tab3">Articles</a>
+      </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade show active" id="tab1">
+        -- Home content goes here.
+      </div>
+      <div class="tab-pane fade" id="tab2">-- about content goes here.</div>
+      <div class="tab-pane fade" id="tab3">-- article content goes here.</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script>
+      //   $(document).ready(function () {
+      //       $('#myTab').tab();
+      //       $('.nav-link').css('color', 'white');
+      //       $('.nav-link').css('background', 'green');
+      //       $('#myTabContent').css('border', '2px solid #ccc');
+      //   });
+        $(document).ready(function(){
+          $('#myTob').tab();
+          $('.nav-link').css('color','pink');
+          $('.nav-link').css('background', 'black');
+          $('#myTabContent').css('border', '5px solid green')
+          $('h1').css('color', 'pink')
+        })
+    </script>
+  </body>
+</html>
