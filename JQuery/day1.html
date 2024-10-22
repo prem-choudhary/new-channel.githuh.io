@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script> -->
+  <body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+
+    <p id="p1">Hello jquery</p>
+    <input type="button" value="click" id="btn" />
+    <h1 id="h">learn jquery with Prem</h1>
+    <input type="button" value="click" id="btn1" />
+    <h2>This is Heanding </h2>
+    <input type="button" value="click" id="btn2">
+    <h3 class="heading"> Tere aas-pass din sara </h3>
+    <input type="button" value="click" id="btn3">
+
+    <script>
+      $(document).ready(function(){
+          $("#btn").click(function(){
+              $("#p1").css("color" , "red")
+          })
+          $('#btn1').click(function(){
+            $('#h').css('background-color', 'blue')
+          })
+          $('#btn2').click(function(){
+            $('h2').css('font-size', '30px')
+          })
+          $('#btn3').click(function(){
+            $('.heading').css('background-color', 'yellow')
+          })
+      })
+    </script>
+  </body>
+</html>
