@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+
+    <h1>Hello and Welcome to learn jQuery</h1>
+    <input type="button" value="click" id="btn" />
+    <br />
+    <input type="text" id="txt" />
+
+    <input type="button" value="click" id="btn" />
+
+    <script>
+        // $(document).ready(function(){
+        //     $('#txt').focus(function(){
+        //         $('#txt').css('background-color' , 'red')
+        //     })
+        //     $('#txt').blur(function(){
+        //         $('#txt').css('background-color' , 'pink')
+        //     })
+
+
+        //     $('#btn').mouseup(function(){ // click any where in mouse like lift right and change the color
+        //         $('h1').css('color' , 'red')
+        //     })
+            // $('#btn').mousedown(function(){ // click any where in mouse like lift right and change the color
+            //     $('h1').css('color' , 'green')
+            // })
+          //   $('h1').mouseleave(function(){ // go to the click btn and hover but color not change but you move your hover and change the color
+          //       $('h1').css('color' , 'green')
+          //   })
+      //   $(document).ready(function(){
+      //       $('h1').mouseenter(function(){ // hover the mouse and change the color
+      //           $('h1').css('color' , 'green')
+      //       })
+          //   $('#btn').dblclick(function(){ // click to time an the same time
+          //       $('h1').css('color' , 'red')
+          //   })
+          //   $('#btn').contextmenu(function(){
+          //       $('h1').css('color' , 'red')
+          //   })
+        // })
+    </script>
+    <h1>more time means less money</h1>
+    <h1>Don't be the same, BE BETTER</h1>
+
+    <script>
+      $(document).ready(function(){
+          $('h1').on( {
+
+              mouseleave :function(){
+              $('h1').css('color' , 'green')
+           },
+              click :function(){
+              $('h1').css('color' , 'pink')
+           },
+              mouseenter :function(){
+              $('h1').css('color' , 'aqua')
+           },
+
+          })
+      })
+    </script>
+  </body>
+</html>
