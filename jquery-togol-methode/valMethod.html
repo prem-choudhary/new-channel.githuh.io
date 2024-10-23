@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+
+    <input type="text" placeholder="enter first number " id="num1" />
+    <input type="text" placeholder="enter second number " id="num2" />
+    <input type="button" value="add" id="Addbtn" />
+    <br />
+    <h1 id="result"></h1>
+
+    <script>
+      $(document).ready(function(){
+          $('#Addbtn').click(function(){
+              var num1 = $('#num1').val()
+              var num2 = $('#num2').val()
+
+                  if(num1 == '' || num2 == ''){
+                      alert('please fill the both fields')
+                      console.log(num1 + num2)
+                  }
+                  else{
+                         var add = parseInt(num1) + parseInt(num2)
+                //          alert('Addition result is : ' + add)
+                            $('#result').text("Addition result is :" + add)
+                   }
+          })
+      })
+    </script>
+  </body>
+</html>
