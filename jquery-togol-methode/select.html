@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <h1>select item</h1>
+    <select id="countries">
+      <option value="-1">Select countries</option>
+      <option value="India">India</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Bhutan">Bhutan</option>
+    </select>
+
+    <input type="button" value="Submit" id="btn" />
+    <br />
+    <h1 id="result"></h1>
+    <script>
+
+      $(document).ready(function(){
+          $('#btn').click(function(){
+              var item = $('#countries').val()
+              if(item == '-1'){
+                  alert('Please select an item')
+              }
+              else{
+                  $('#result').text('You have selected: ' + item)
+              }
+          })
+      })
+    </script>
+  </body>
+</html>
