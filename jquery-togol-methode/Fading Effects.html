@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1{
+          margin: auto;
+          height: 250px;
+          width: 250px;
+          border: 5px solid black;
+          background-color: aqua;
+          border-radius: 10px;
+          text-align: center;
+          display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+
+    <div id="div1">
+      <h1>THIS IS A DIV</h1>
+      <p>THIS IS PARAGRAPH</p>
+    </div>
+    <br />
+    <input type="button" value="Fade To" id="Btn1" />
+
+    <script>
+      $(document).ready(function(){
+        $('#Btn1').ready(function(){
+            $('#div1').fadeTo(1000 , 0.2)
+        })
+      })
+    </script>
+  </body>
+</html>
